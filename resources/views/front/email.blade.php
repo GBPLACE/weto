@@ -1,0 +1,9 @@
+@extends('layouts.register_layout')@section('title', 'WETO | Password Recovery')@section('content') 
+<!--<div class="weto-table">-->
+    <!--<div class="weto-table-cell">-->
+        <form action="{{route('emailSubmit')}}" method="post" class="login-form" id="emailForm">                @csrf                @if(session()->has('error'))                    <div class="alert alert-danger text-center">                        {{ session()->get('error') }}                    </div>                @endif                @if(session()->has('message'))                    <div class="alert alert-success text-center">                        {{ session()->get('message') }}                    </div>                @endif                <ul>                    <li>                        <input type="text" name="email" class="form-control" placeholder="Email address">                        @error('email')                        <label  class="error" >{{ $message }}</label>                        @enderror                    </li>                    <li>                        <input type="submit" class="submit" value="Submit">                    </li>                </ul>            </form>
+        <!--</div>-->
+        <!--</div>-->
+        <div class="footer-wrap">        <span>Do you have an account? <strong><a href="{{route('login')}}">Log In</a></strong></span>        <span>Don't have an account? <strong>
+            <!--<a href="{{route('becomeHost')}}">Sign up as Host, </a>-->
+        <a href="{{route('userSignup')}}">Sign up as User</a></strong></span>{{--        <h6>{{ $homeContent[0]['footer_logo_text']}}</h6>--}}    </div>@endsection

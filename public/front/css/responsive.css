@@ -1,0 +1,394 @@
+/*	Media 768Px Start */
+@media (min-width: 768px) and (max-width: 990px) {
+    .navbar-toggler {
+        border: 1px solid #fff;
+        color: #fff;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        right: 0px;
+        width: 200px;
+        background-color: #fff;
+        top: 100%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+
+    .navbar-nav li a {
+        color: #000;
+    }
+
+    .navbar-nav li {
+        text-align: left;
+    }
+
+    .weto-header-one .col-md-4 {
+        float: left;
+        width: 50%;
+    }
+
+    .weto-header-one .col-md-8 {
+        float: left;
+        width: 50%;
+    }
+
+    .logo img {
+        width: 165px;
+    }
+
+    .app-mobile {
+        display: none;
+    }
+
+    .banner-search h2 {
+        font-size: 23px
+    }
+
+    .banner-search {
+        width: 100%;
+    }
+
+    .banner-search ul li li {
+        width: 100%;
+    }
+
+    .banner-search ul li li:first-child {
+        margin: 0px 0px 15px;
+    }
+
+    .banner-search ul li {
+        margin: 0 0 15px;
+    }
+
+    .weto-banner-layer {
+        height: 600px;
+    }
+
+    .fancy-title {
+        margin: 0px 0px 30px;
+        font-size: 30px;
+    }
+
+    .weto-city>ul>li {
+        width: 50%;
+    }
+
+    .weto-slider-section .slick-arrow {
+        width: 40px;
+        line-height: 35px;
+        font-size: 20px;
+        height: 40px;
+        right: 50px;
+        top: -18px;
+    }
+
+    .weto-slider-section .slick-arrow-right.slick-arrow {
+        right: 0px;
+    }
+
+    .weto-social ul li {
+        margin: 0px 39px 30px;
+    }
+
+    .weto-count ul li {
+        margin: 0px -4px 10px 0px;
+        width: 33.333%;
+    }
+
+    .weto-appfull {
+        margin: 0px;
+    }
+
+    .min-title {
+        text-align: left;
+    }
+
+    .check-availability form ul li li {
+        width: 50%;
+    }
+
+    .check-availability h2 {
+        font-size: 25px;
+    }
+
+    .sorting li {
+        margin: 0px 0px 0px 10px;
+    }
+
+    .weto-main-content {
+        padding-top: 60px;
+    }
+
+    .round-btn {
+        font-size: 14px;
+    }
+
+    .weto-edit-info ul li {
+        width: 100%;
+        margin: 0px 0px 10px;
+    }
+
+    .weto-edit-info {
+        padding-bottom: 20px;
+    }
+
+    .submit {
+        font-size: 15px;
+    }
+
+    /*.profile { float: none; display: inline-block; }*/
+    .profile>a {
+        padding: 0px 0px 0px 10px;
+    }
+
+    .checkbox-section {
+        width: 100%;
+    }
+
+    /*.checkbox-section ul li { width: 33.333%; margin: 0px 0px 10px; }*/
+    .qi,
+    .pop {
+        display: none;
+    }
+
+    .weto-appfull .col-md-6 .col-md-7 {
+        display: none;
+    }
+
+    .weto-appfull .col-md-6 .col-md-5,
+    .weto-appfull .col-md-6 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .weto-slider-section2 .layer {
+        width: 50%;
+    }
+}
+
+/* Media 420Px Start */
+@media (max-width: 767px) {
+    .sorting li:first-child {
+        width: 100%;
+        margin: 0px 0px 10px;
+    }
+
+    .navbar-toggler {
+        border: 1px solid #fff;
+        color: #fff;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        right: 0px;
+        width: 200px;
+        background-color: #fff;
+        top: 100%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+
+    .navbar-nav li a {
+        color: #000;
+    }
+
+    .navbar-nav li {
+        text-align: left;
+    }
+
+    .weto-header-one .col-md-4 {
+        float: left;
+        width: 50%;
+    }
+
+    .weto-header-one .col-md-8 {
+        float: left;
+        width: 50%;
+    }
+
+    .logo img {
+        width: 165px;
+    }
+
+    .banner-caption h1,
+    .app-mobile {
+        display: none;
+    }
+
+    .banner-search h2 {
+        font-size: 23px
+    }
+
+    .banner-search {
+        width: 100%;
+    }
+
+    .banner-search ul li li {
+        width: 100%;
+    }
+
+    .banner-search ul li li:first-child {
+        margin: 0px 0px 15px;
+    }
+
+    .banner-search ul li {
+        margin: 0 0 15px;
+    }
+
+    .weto-banner-layer {
+        height: 600px;
+    }
+
+    .fancy-title {
+        margin: 0px 0px 30px;
+        font-size: 30px;
+    }
+
+    .weto-city>ul>li {
+        width: 100%;
+    }
+
+    .weto-slider-section .slick-arrow {
+        width: 40px;
+        line-height: 35px;
+        font-size: 20px;
+        height: 40px;
+        right: 50px;
+        top: -18px;
+    }
+
+    .weto-slider-section .slick-arrow-right.slick-arrow {
+        right: 0px;
+    }
+
+    .weto-social a img {
+        height: 35px;
+    }
+
+    .weto-social ul li {
+        width: 50%;
+        margin: 0px -4px 30px 0px;
+        vertical-align: top;
+    }
+
+    .weto-count ul li {
+        margin: 0px 0px 10px;
+    }
+
+    .weto-appfull {
+        margin: 0px;
+    }
+
+    .min-title {
+        text-align: left;
+    }
+
+    .check-availability form ul li,
+    .weto-slider-section2 .layer {
+        width: 100%;
+    }
+
+    .check-availability form ul li li {
+        width: 50%;
+    }
+
+    .check-availability h2 {
+        font-size: 25px;
+    }
+
+    .sorting li {
+        width: 50%;
+        margin: 0px 0px 0px;
+        padding: 0px 5px;
+    }
+
+    .weto-main-content {
+        padding-top: 60px;
+    }
+
+    .round-btn {
+        font-size: 14px;
+    }
+
+    .login-form {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .login-view {
+        padding: 0px 15px 10px;
+        height: auto;
+    }
+
+    .weto-edit-info ul li {
+        width: 100%;
+        margin: 0px 0px 10px;
+    }
+
+    .weto-edit-info {
+        padding-bottom: 20px;
+    }
+
+    .submit {
+        font-size: 15px;
+    }
+    .weto-city.weto-top-city ul li { width: 100%; }
+
+    /*.profile { float: none; display: inline-block; }*/
+    .profile>a {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .checkbox-section {
+        width: 100%;
+    }
+
+    .checkbox-section ul li {
+        width: 33.333%;
+        margin: 0px 0px 10px;
+    }
+
+    .qi,
+    .pop {
+        display: none;
+    }
+
+    .footer-wrap span strong a {
+        font-size: 19px;
+    }
+
+    .footer-wrap span {
+        margin: 0px 0px 17px;
+        font-size: 23px;
+        line-height: 1;
+    }
+}
+
+/* Media 300Px Start */
+@media (max-width: 600px) {
+    .checkbox-section ul li {
+        width: 50%;
+    }
+}
+
+/* Media 940Px Start */
+@media screen and (min-width: 991px) and (max-width: 1600px) {
+
+    /*.login-view { height: 900px; }*/
+    .checkbox-section {
+        width: 50%;
+    }
+    .weto-slider-section .slick-arrow {
+        width: 40px;
+        line-height: 35px;
+        font-size: 20px;
+        height: 40px;
+        right: 60px;
+        top: -50px;
+    }
+
+    .weto-slider-section .slick-arrow-right.slick-arrow {
+        right: 11px;
+    }
+}
