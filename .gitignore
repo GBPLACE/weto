@@ -15,3 +15,4 @@ weto.sql.gz
 error_log
 .idea
 app/error_log
+docker-compose.override.yml
