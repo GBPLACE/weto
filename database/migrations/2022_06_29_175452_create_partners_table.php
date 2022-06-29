@@ -15,14 +15,13 @@ class CreatePartnersTable extends Migration
     {
         Schema::create('partners', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name', 255);
             $table->date('date_of_birth');
-            $table->string('email');
+            $table->string('email', 255);
             $table->integer('email_verification')->default(0);
-            $table->string('token')->nullable();
-            $table->string('website')->nullable();
-            $table->string('password');
-
+            $table->string('token', 255)->nullable();
+            $table->string('website', 255)->nullable();
+            $table->string('password', 255);
             $table->timestamps();
         });
     }

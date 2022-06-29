@@ -21,6 +21,7 @@ services:
       - wetooo_network
     environment:
       - HISTFILE=/home/utente/shell_history/.x_history
+      - APP_ENV=local
 
   web:
     image: nginx:1.23.0-alpine
@@ -34,3 +35,17 @@ services:
       - wetooo_network
     ports:
       - "8080:80"
+
+  servicedb:
+    image: mariadb:10.5.16
+    volumes:
+      - app_database:/var/lib/mysql
+      - ./mariadb/custom.cnf:/etc/mysql/conf.d/custom.cnf
+      - ./data/db:/docker-entrypoint-initdb.d
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=weto
+    networks:
+      - wetooo_network
+    ports:
+      - "3312:3306"

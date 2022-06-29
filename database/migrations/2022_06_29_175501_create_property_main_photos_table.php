@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAdminsTable extends Migration
+class CreatePropertyMainPhotosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateAdminsTable extends Migration
      */
     public function up()
     {
-        Schema::create('admins', function (Blueprint $table) {
+        Schema::create('property_main_photos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('email');
-            $table->string('token')->nullable();
-            $table->string('password');
-
+            $table->unsignedInteger('property_id');
+            $table->string('main_photo', 255);
             $table->timestamps();
+            
+            $table->foreign('property_id', 'property_main_photos_property_id_foreign')->references('id')->on('properties')->onDelete('cascade');
         });
     }
 
@@ -31,6 +30,6 @@ class CreateAdminsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admins');
+        Schema::dropIfExists('property_main_photos');
     }
 }

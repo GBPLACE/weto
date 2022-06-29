@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUnavailableDatesTable extends Migration
+class CreateUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreateUnavailableDatesTable extends Migration
      */
     public function up()
     {
-        Schema::create('unavailable_dates', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('property_id')->unsigned();
-            $table->foreign('property_id')->references('id')->on('properties')->onDelete('cascade');
-            $table->date('start_date');
-            $table->date('end_date');
-
+            $table->string('name', 255);
+            $table->string('email', 255);
+            $table->integer('email_verification')->default(0);
+            $table->string('token', 255)->nullable();
+            $table->string('password', 255);
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ class CreateUnavailableDatesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('unavailable_dates');
+        Schema::dropIfExists('users');
     }
 }

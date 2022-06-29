@@ -15,18 +15,17 @@ class CreateSiteContentsTable extends Migration
     {
         Schema::create('site_contents', function (Blueprint $table) {
             $table->id();
-            $table->string('header_logo') ;
-            $table->string('banner_img') ;
-            $table->text('banner_txt') ;
-            $table->string('fb_link') ;
-            $table->string('insta_link') ;
-            $table->string('tweeter_link') ;
-            $table->string('linkin_link') ;
-            $table->string('footer_title') ;
-            $table->text('footer_text') ;
-            $table->string('favicon') ;
-            $table->string('footer_logo') ;
-            $table->text('footer_logo_text') ;
+            $table->string('header_logo', 255);
+            $table->string('fb_link', 255);
+            $table->string('insta_link', 255);
+            $table->string('tweeter_link', 255);
+            $table->string('linkin_link', 255);
+            $table->string('footer_title', 255);
+            $table->text('footer_text');
+            $table->string('favicon', 255);
+            $table->string('footer_logo', 255);
+            $table->text('footer_Credits')->nullable();
+            $table->text('footer_logo_text');
             $table->timestamps();
         });
     }

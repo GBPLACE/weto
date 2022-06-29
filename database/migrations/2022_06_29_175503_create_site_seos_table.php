@@ -15,11 +15,10 @@ class CreateSiteSeosTable extends Migration
     {
         Schema::create('site_seos', function (Blueprint $table) {
             $table->id();
-            $table->integer('site_page_number') ;
-            $table->string('page_title' , '100') ;
-            $table->string('keywords') ;
-            $table->text('description') ;
-
+            $table->integer('site_page_number');
+            $table->string('page_title', 100);
+            $table->string('keywords', 255);
+            $table->text('description');
             $table->timestamps();
         });
     }

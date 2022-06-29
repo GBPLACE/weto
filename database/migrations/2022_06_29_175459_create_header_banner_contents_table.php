@@ -15,9 +15,12 @@ class CreateHeaderBannerContentsTable extends Migration
     {
         Schema::create('header_banner_contents', function (Blueprint $table) {
             $table->id();
-            $table->string('image') ;
-            $table->text('text') ;
+            $table->unsignedBigInteger('site_content_id')->nullable();
+            $table->string('image', 255);
+            $table->text('text');
             $table->timestamps();
+            
+            $table->foreign('site_content_id', 'header_banner_contents_site_content_id_foreign')->references('id')->on('site_contents')->onDelete('cascade');
         });
     }
 

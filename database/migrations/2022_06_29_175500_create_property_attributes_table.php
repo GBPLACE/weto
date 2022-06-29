@@ -15,8 +15,7 @@ class CreatePropertyAttributesTable extends Migration
     {
         Schema::create('property_attributes', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('property_id')->unsigned();
-            $table->foreign('property_id')->references('id')->on('properties')->onDelete('cascade');
+            $table->unsignedInteger('property_id');
             $table->integer('terrace')->nullable();
             $table->integer('pool')->nullable();
             $table->integer('tennis')->nullable();
@@ -49,8 +48,9 @@ class CreatePropertyAttributesTable extends Migration
             $table->integer('garage')->nullable();
             $table->integer('check_in_24h')->nullable();
             $table->integer('luggage_deposit')->nullable();
-
             $table->timestamps();
+            
+            $table->foreign('property_id', 'property_attributes_property_id_foreign')->references('id')->on('properties')->onDelete('cascade');
         });
     }
 

@@ -1,6 +1,11 @@
 FROM matiux/php:fpm-7.4-bullseye-dev
 
+ENV TZ=Europe/Rome
+
 USER root
+
+# php.ini
+COPY conf/php.ini /usr/local/etc/php/conf.d/zz_custom_php.ini
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     jq
