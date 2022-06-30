@@ -11,7 +11,10 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 /travel
-weto.sql.gz
+*.sql.gz
+*.sql
 error_log
 .idea
 app/error_log
+docker-compose.override.yml
+.env.local
