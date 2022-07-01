@@ -24,4 +24,4 @@
 <script type="text/javascript" src="{{asset('jquery-confirm/jquery-confirm.js')}}"></script>
 
 {{--for google search--}}
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjw8ZoJW9OvaknJj12gfofcopPdY_H6zM&libraries=places"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwNix7oEgIClolCcshnw88PqGsMHj5ao8&libraries=places"></script>
